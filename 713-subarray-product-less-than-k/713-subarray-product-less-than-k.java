@@ -14,7 +14,7 @@ class Solution {
                 s++;
             }
             //ans cal
-            c = c + e - s +1;
+            c = c + (e - s) +1; //all element in range of s to e
             e++;
         }
         return c;

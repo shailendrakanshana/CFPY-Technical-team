@@ -1,5 +1,7 @@
 class Solution {
     public int tribonacci(int n) {
+        //Same as fabonacci but for 3 variables
+        
         int a = 0;
         int b = 1;
         int c = 1;

@@ -6,7 +6,7 @@ public class Solution {
             if((n&1)==1){
                 c++;
             }
-            n = n>>>1;
+            n = n>>>1;//Unsigned right Shift
         }
         return c;
         

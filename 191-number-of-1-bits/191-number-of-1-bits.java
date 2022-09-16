@@ -4,7 +4,7 @@ public class Solution {
         int c = 0;
         while(n!=0){
             c++;
-            n = n&(n-1);//Unsigned right Shift
+            n = n&(n-1);// set the significant bits to Zero 
         }
         return c;
         

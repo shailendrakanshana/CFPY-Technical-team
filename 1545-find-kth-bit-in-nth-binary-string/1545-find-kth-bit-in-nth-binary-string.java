@@ -1,4 +1,5 @@
 class Solution {
+    // Fuction to Invert and Reverse the String
     public static String ReverseInv(String a){
         StringBuilder s = new StringBuilder();
         for(int i = 0;i<a.length();i++){

@@ -5,7 +5,7 @@ class Solution {
         int m = matrix[0].length;
         for(int i  = 0;i<n;i++){
             for(int j = 0;j<m;j++){
-                if(matrix[i][j]==0){
+                if(matrix[i][j]==0){//Finding the row-index & col-index of zeros
                     ArrayList<Integer> p = new ArrayList<>();
                     p.add(i);
                     p.add(j);
@@ -14,9 +14,11 @@ class Solution {
             }
         }
         for(int i = 0;i<l.size();i++){
+            //Setting row zero
             for(int j = 0;j<m;j++){
                 matrix[l.get(i).get(0)][j] = 0;
             }
+            //Setting column zero
             for(int j = 0;j<n;j++){
                 matrix[j][l.get(i).get(1)] = 0;
             }

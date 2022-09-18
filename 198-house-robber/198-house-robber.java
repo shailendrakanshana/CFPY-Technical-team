@@ -11,7 +11,7 @@ class Solution {
         ar[0] = nums[0];
         ar[1] = Math.max(nums[0],nums[1]);
         for(int i = 2;i<n;i++){
-            ar[i] = Math.max(nums[i]+ar[i-2],ar[i-1]);
+            ar[i] = Math.max(nums[i]+ar[i-2],ar[i-1]);//will store the next sum of max loot
         }
         return ar[n-1];
         

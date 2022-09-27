@@ -1,6 +1,6 @@
 class Solution {
     public int lengthOfLIS(int[] nums) {
-        //DP - Approach
+        //DP - Approach - O(N^2)
         int n = nums.length;
         if(n==1){
             return 1;

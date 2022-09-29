@@ -20,7 +20,7 @@ class Solution {
         return l;
         
         /*
-        //CHEATING methond
+        //CHEATING method
         List<String> l = new ArrayList<>();
         for(int i = 1;i<=n;i++){
             l.add(Integer.toString(i));

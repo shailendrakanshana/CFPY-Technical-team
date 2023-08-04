@@ -45,19 +45,16 @@ class GFG
 
 class Solution
 { 
-    static void insert(Stack<Integer> stk,int x){
-        if(stk.isEmpty()) stk.push(x);
-        else{
-            int a = stk.pop();
-            insert(stk,x);
-            stk.push(a);
-        }
-    }
-    static void reverse(Stack<Integer> stk)
+    static void reverse(Stack<Integer> s)
     {
-        if(stk.isEmpty()) return;
-        int a = stk.pop();
-        reverse(stk);
-        insert(stk,a);
+        // add your code here
+        Queue<Integer> q = new LinkedList<>();
+        while(!s.isEmpty()){
+            q.add(s.pop());
+        }
+        while(!q.isEmpty()){
+            s.push(q.poll());
+        }
+        
     }
 }
